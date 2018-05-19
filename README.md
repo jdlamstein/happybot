@@ -27,7 +27,6 @@ I used a binary multiclass classifier, which means the algorithm forces a decisi
 Two separate neural networks analyzed the top half of the face and the lower half of the face. The upper model had a TPR 87% and the lower model had a TPR of 91%, which averages to 89% TPR. This accuracy is comparable to Tian's paper, and Tian's group calculated accuracy in the same way. However, Tian used a dataset in addition to CK+, the Ekman-Hager Facial Action Dataset. I saw, from the confusion matrix, that some AUs were detected more reliably than others. After some tinkering with the input parameters and the weights of the loss function, nothing changed, and I deduced that the problem was limited data and I eliminated them from the classification. The AUs found were sufficient to classify basic emotions on live video. 
 
 ![test](/img/bot_xent.png)
-![test](/img/bot_tpr.png)
 <p align = "center">
   <img src="/img/emo_pic.png" alt="Beautiful image not rendered..." width="758" height="600">
 </p>
