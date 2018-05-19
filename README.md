@@ -5,7 +5,7 @@ The algorithm identifies AUs 1, 2, 4, 5, 9, 12, 15, 17, 20, 25, and 27.
 
 ## Motivation
 Many businesses want to provide something to a customer that will make them happier, but we don't have good ways to measure how happy a person is. I wanted to get a taste of how computer vision could identify a person's feeling. Computer vision is a deep field, and I finish my ambitious project wiser and hopeful. 
-
+[test](/img/emo_pic.png)
 I was happy that my background in physics and programming for lab provided me with sufficient tools to learn the novel aspects of this project. Many algorithms were new to me and forums, books, and papers guided me in the right direction. 
 
 ## Background
