@@ -24,11 +24,13 @@ The neural network was written in tensorflow and summarized in tensorboard. I wa
 ## Evaluating Accuracy
 I used a binary multiclass classifier, which means the algorithm forces a decision as to whether there is an AU or not. The CK+ database is unbalanced for FACS analysis so I weighted the presence of an AU I'm looking for, positive values, more than the absense of an AU, negative values. Accuracy, in this context, is a misnomer as it will artificially inflate when the algorithm match null values. The test of accuracy is the true positive rate (TPR). 
 
-### Accuracy for Lower Facial Features
+### Accuracy for Detecting Lower Facial Features
 ![Figure Not Found!](/img/bot_tpr23.png)
 
 ### Cross Entropy Loss function for Lower Facial Features
 ![Figure Not Found!](/img/bot_xent23.png)
+
+### Biases of 2nd Fully Connected Layer
 
 Two separate neural networks analyzed the top half of the face and the lower half of the face. The upper model had a TPR 87% and the lower model had a TPR of 91%, which averages to 89% TPR. I found the upper model performed best with six layers, and the lower with only two, which I assume is because the facial actions in the lower part of the face move a greater distance and are easier to detect. This accuracy is comparable to Tian's paper, and Tian's group calculated accuracy in the same way. However, Tian used a dataset in addition to CK+, the Ekman-Hager Facial Action Dataset. I saw, from the confusion matrix, that some AUs were detected more reliably than others. After some tinkering with the input parameters and the weights of the loss function, nothing changed, and I deduced that the problem was limited data and I eliminated them from the classification. The AUs found were sufficient to classify basic emotions on live video. 
 
