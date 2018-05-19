@@ -41,6 +41,8 @@ The loss function show go toward zero and it does.
 
 Two separate neural networks analyzed the top half of the face and the lower half of the face. The upper model had a TPR 87% and the lower model had a TPR of 91%, which averages to 89% TPR. I found the upper model performed best with six layers, and the lower with only two, which I assume is because the facial actions in the lower part of the face move a greater distance and are easier to detect. This accuracy is comparable to Tian's paper, and Tian's group calculated accuracy in the same way. However, Tian used a dataset in addition to CK+, the Ekman-Hager Facial Action Dataset. I saw, from the confusion matrix, that some AUs were detected more reliably than others. After some tinkering with the input parameters and the weights of the loss function, nothing changed, and I deduced that the problem was limited data and I eliminated them from the classification. The AUs found were sufficient to classify basic emotions on live video. 
 
+Here's a pic of me smiling. There are a few extra AUs because this was an earlier version with about 80% accuracy, but it still read my facial expression. I was happy that the model worked outside of the CK+ dataset. 
+
 <p align = "center">
   <img src="/img/emo_pic.png" alt="Beautiful image not rendered..." width="758" height="600">
 </p>
