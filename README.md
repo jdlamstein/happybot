@@ -5,8 +5,7 @@ The algorithm identifies AUs 1, 2, 4, 5, 9, 12, 15, 17, 20, 25, and 27.
 
 ## Motivation
 Many businesses want to provide something to a customer that will make them happier, but we don't have good ways to measure how happy a person is. I wanted to get a taste of how computer vision could identify a person's feeling. Computer vision is a deep field, and I finish my ambitious project wiser and hopeful. 
-![test](/img/emo_pic.png)
-Format: ![Alt Text](url)
+
 I was happy that my background in physics and programming for lab provided me with sufficient tools to learn the novel aspects of this project. Many algorithms were new to me and forums, books, and papers guided me in the right direction. 
 
 ## Background
@@ -26,3 +25,6 @@ The neural network was written in tensorflow and summarized in tensorboard. I wa
 I used a binary multiclass classifier, which means the algorithm forces a decision as to whether there is an AU or not. The CK+ database is unbalanced for FACS analysis so I weighted the presence of an AU I'm looking for, positive values, more than the absense of an AU, negative values. Accuracy, in this context, is a misnomer as it will artificially inflate when the algorithm match null values. The test of accuracy is the true positive rate (TPR). 
 
 Two separate neural networks analyzed the top half of the face and the lower half of the face. The upper model had a TPR 87% and the lower model had a TPR of 91%, which averages to 89% TPR. This accuracy is comparable to Tian's paper, and Tian's group calculated accuracy in the same way. However, Tian used a dataset in addition to CK+, the Ekman-Hager Facial Action Dataset. I saw, from the confusion matrix, that some AUs were detected more reliably than others. After some tinkering with the input parameters and the weights of the loss function, nothing changed, and I deduced that the problem was limited data and I eliminated them from the classification. The AUs found were sufficient to classify basic emotions on live video. 
+
+![test](/img/emo_pic.png)
+<img src="/img/emo_pic.png" alt="Thanks for visiting!" width="758" height="600">
