@@ -26,12 +26,15 @@ I used a binary multiclass classifier, which means the algorithm forces a decisi
 
 ### Accuracy for Detecting Lower Facial Features
 ![Figure Not Found!](/img/bot_tpr23.png)
+It was interesting that the testing TPR passed the training TPR. I've never seen that happen before. A quarter of the samples were used for testing. If the database were larger, the additional testing samples would match the TPR of the testing and training. It does give me confidence that the model is not overfitting.
 
 ### Biases of 2nd Fully Connected Layer
 ![Figure Not Found!](/img/bot_activation.png)
+I like Tensorflow for this visualization. It's very useful to be able to see what every layer is doing. 
 
 ### Cross Entropy Loss function for Lower Facial Features
 ![Figure Not Found!](/img/bot_xent23.png)
+The loss function show go toward zero and it does. 
 
 Two separate neural networks analyzed the top half of the face and the lower half of the face. The upper model had a TPR 87% and the lower model had a TPR of 91%, which averages to 89% TPR. I found the upper model performed best with six layers, and the lower with only two, which I assume is because the facial actions in the lower part of the face move a greater distance and are easier to detect. This accuracy is comparable to Tian's paper, and Tian's group calculated accuracy in the same way. However, Tian used a dataset in addition to CK+, the Ekman-Hager Facial Action Dataset. I saw, from the confusion matrix, that some AUs were detected more reliably than others. After some tinkering with the input parameters and the weights of the loss function, nothing changed, and I deduced that the problem was limited data and I eliminated them from the classification. The AUs found were sufficient to classify basic emotions on live video. 
 
