@@ -9,6 +9,9 @@ I was happy that my background in physics and programming for lab provided me wi
 ## Methods and Background
 I used the [CK+ Dataset](http://www.pitt.edu/~emotion/ck-spread.htm) because it was available and had labelled AUs and some labelled basic emotions. The CK+ Dataset consists of 593 image sequences of 123 subjects. All sequences start at neutral facial expression and end at peak facial expression. All sequences are coded with AUs and corresponding intensities. 327 sequences are labelled for basic emotions. 
 
+I started the project reading recent papers about convolutional neural networks, such as Modeling Spatial and Temporal Cues for
+Multi-label Facial Action Unit Detection by Chu, Torre and Cohn. They paired a CNN with an LSTM so that the occurrence of one AU changes the probability of the occurence of the another. I think CNNs and LSTMs are promising for identifying emotions in the wild, as CNNs are tolerant of translation and rotations of faces, and since CNNs struggle to capture long term dependencies, LSTMs are appropriate. I appreciate the usefulness of CNNs, and the paper on how the layers work by [Zeiler](https://arxiv.org/abs/1311.2901) was illuminating, but I was drawn to the simpler methods of SVM, AdaBoost, and feed-forward MLP. 
 
+In [Kotsia and Pitas' paper](https://ieeexplore.ieee.org/document/4032815/), they used a modified SVM and facial landmarks from a Candide Grid to classify AUs and basic emotions. 
 
 ## Evaluating Accuracy
