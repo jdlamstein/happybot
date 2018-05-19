@@ -28,4 +28,4 @@ Two separate neural networks analyzed the top half of the face and the lower hal
 
 ![test](/img/bot_xent.png)
 ![test](/img/bot_tpr.png)
-<img src="/img/emo_pic.png" align = 'center' alt="Beautiful image not rendered..." width="758" height="600">
+<img src="/img/emo_pic.png" align = "center" alt="Beautiful image not rendered..." width="758" height="600">
