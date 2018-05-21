@@ -43,6 +43,4 @@ Two separate neural networks analyzed the top half of the face and the lower hal
 
 Here's a pic of me smiling. There are a few extra AUs because this was an earlier version with about 80% accuracy, but it still read my facial expression. I was happy that the model worked outside of the CK+ dataset. 
 
-<p align = "center">
-  <img src="/img/emo_pic.png" alt="Beautiful image not rendered..." width="758" height="600">
-</p>
+![Beautiful Image Not Found!](/img/face_pic.png)
