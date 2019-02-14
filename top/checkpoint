@@ -1,6 +1,0 @@
-model_checkpoint_path: "/Users/joshualamstein/Desktop/pyFiles/save_tf_upper_zappa_8/lr_1E-02,cw_1,fc=6/model-3000"
-all_model_checkpoint_paths: "/Users/joshualamstein/Desktop/pyFiles/save_tf_upper_zappa_8/lr_1E-02,cw_1,fc=6/model-2800"
-all_model_checkpoint_paths: "/Users/joshualamstein/Desktop/pyFiles/save_tf_upper_zappa_8/lr_1E-02,cw_1,fc=6/model-2850"
-all_model_checkpoint_paths: "/Users/joshualamstein/Desktop/pyFiles/save_tf_upper_zappa_8/lr_1E-02,cw_1,fc=6/model-2900"
-all_model_checkpoint_paths: "/Users/joshualamstein/Desktop/pyFiles/save_tf_upper_zappa_8/lr_1E-02,cw_1,fc=6/model-2950"
-all_model_checkpoint_paths: "/Users/joshualamstein/Desktop/pyFiles/save_tf_upper_zappa_8/lr_1E-02,cw_1,fc=6/model-3000"
